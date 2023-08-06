@@ -52,11 +52,11 @@ async function users_populate(){
     try{
         //registering new users
         User.insertMany([
-            {username: "Marion Jose S. Manipol", profile_picture: "profile-1.jpeg", profile_banner: "banner-1.jpeg", intro: "Oui oui, I play Dislyte.", id: "12182680"},
-            {username: "Pierre Cabinbin", profile_picture: "profile-2.jpeg", profile_banner: "banner-2.jpeg", intro: "Dragons are cool | 20", id: "12134152"},
-            {username: "Edward James Tan", profile_picture: "profile-3.jpeg", profile_banner: "banner-3.jpeg", intro: "Author of California Eden", id: "12153412"},
-            {username: "Chel Diokno", profile_picture: "profile-4.jpeg", profile_banner: "banner-4.jpeg", intro: "Chairman, Free Legal Assistance Group. Human rights lawyer. Teacher. Father. ", id: "09135742"},
-            {username: "Lazada", profile_picture: "profile-5.jpeg", profile_banner: "banner-5.jpeg", intro: "Add to Cart. Add to Life.  ✨", id: "Sponsor"},
+            {username: "Marion Jose S. Manipol", profile_picture: "profile-1.jpeg", profile_banner: "banner-1.jpeg", intro: "Oui oui, I play Dislyte.", id: "12182680", password: "$2a$10$rx1vyJFxVxk9GZ9PYytdteS0CfbgHbHRsXlPKUVZbjXbxUBiyGHNi"},
+            {username: "Pierre Cabinbin", profile_picture: "profile-2.jpeg", profile_banner: "banner-2.jpeg", intro: "Dragons are cool | 20", id: "12134152", password: "$2a$10$8yu9HoUh2My8eI7wAC.66Os7K2NhyZPJ.NV8bWbI5CNMSiwXTxa7."},
+            {username: "Edward James Tan", profile_picture: "profile-3.jpeg", profile_banner: "banner-3.jpeg", intro: "Author of California Eden", id: "12153412", password: "$2a$10$txs6dHHSifuCuuq/mnb7R.p8ukSBzljWIIajC5USrnlMaJRwu2OgK"},
+            {username: "Chel Diokno", profile_picture: "profile-4.jpeg", profile_banner: "banner-4.jpeg", intro: "Chairman, Free Legal Assistance Group. Human rights lawyer. Teacher. Father. ", id: "09135742", password:"$2a$10$qIAs4z3aOTFWuq7/GpH4ZeL.GBlxMjL8dzuTc/awv2LMIgIKl3fRS"},
+            {username: "Lazada", profile_picture: "profile-5.jpeg", profile_banner: "banner-5.jpeg", intro: "Add to Cart. Add to Life.  ✨", id: "Sponsor", password:"$2a$10$fWIhT8E6P0GsWN41OpP3auK3NMd8bJBEd27HViwycBpnkkQjiSvkW"},
         ])
         } catch(e){
             console.log(e.message)
